@@ -1,5 +1,10 @@
-FROM ubuntu:14.04
-ENV DEBIAN_FRONTEND noninteractive
+#FROM ubuntu:14.04
+#ENV DEBIAN_FRONTEND noninteractive
+#On raspberry pi use this:
+#FROM armhf/alpine:latest
+
+#On pc use this:
+FROM alpine:latest
 
 # Install, use dev tools, and then clean up in one RUN transaction
 # to minimize image size.
